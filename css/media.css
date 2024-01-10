@@ -1,0 +1,337 @@
+@media screen and (max-width: 1400px) {
+
+    /* 1025~1400*/
+    #web {
+        display: none;
+    }
+
+
+
+    nav#mobile {
+        display: block;
+    }
+
+    #web_Nav2>div {
+        width: 100%;
+    }
+
+    #web_Nav2>div>div {
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+
+    #class {
+        width: 87%;
+    }
+
+    #tap {
+        width: 87%;
+    }
+
+    #tap .tapCate>ul {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    #review .reviewCard {
+        width: 87%;
+    }
+
+    #class>div {
+        width: 30%;
+        margin-bottom: 60px;
+
+    }
+
+    #class p {
+        height: 100px;
+    }
+
+
+    #web_Nav2 .buttons ul {
+        right: 24px;
+    }
+
+    #review .reviewCard>div {
+        height: 190px;
+    }
+
+
+    .slide1 {
+        background: url(../img/banner01-1.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* 801~1024 */
+
+
+    #web_Nav2 {
+        width: 100%;
+        height: 160px;
+    }
+
+
+    #web_Nav2>div>div {
+        width: 100%;
+        padding: 0 4%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #web_Nav2>div>.notice {
+        height: 65px;
+    }
+
+    #web_Nav2>div .notice span {
+        line-height: 65px;
+    }
+
+    #web_Nav2>div>.buttons {
+        height: 100px;
+    }
+
+    #web_Nav2 .buttons ul {
+        left: 50%;
+        width: 390px;
+        transform: translate(-50%, 0);
+        margin-top: 10px;
+        float: none;
+    }
+
+    #web_Nav2 .buttons ul li {
+        margin-right: 20px;
+    }
+
+
+    #class {
+        width: 87%;
+        margin: 80px auto 60px;
+    }
+
+    #class p {
+        height: auto;
+    }
+
+
+    #class>div {
+        width: 47%;
+        margin-bottom: 60px;
+
+    }
+
+
+    #class>div>img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    #review .reviewCard>div {
+        width: 100%;
+        height: 170px;
+    }
+
+    #review {
+        padding: 100px 0 80px;
+    }
+
+    #review>ul {
+        display: block;
+    }
+
+    #tap .tapCate>ul {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #tap .tapConts>ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #tap .tapConts>ul>li>p {
+        float: none;
+    }
+
+    #tap .tapConts>ul>li {
+        padding: 20px 22px;
+        margin-bottom: 0;
+    }
+
+    #tap .tapConts>ul>li .classInfo {
+        margin-bottom: 12px;
+    }
+
+    .campus {
+        margin-bottom: 12px;
+    }
+
+    .className {
+        margin-bottom: 4px;
+        letter-spacing: -0.6px;
+    }
+
+    #footer > ul {
+        width: 87%;
+    }
+
+    .slide1 {
+        background: url(../img/banner01-2.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide2 {
+        background: url(../img/banner02-1.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide3 {
+        background: url(../img/banner03-1.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    /* 768 ~ 800 */
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    /* 601~768 */
+
+
+
+    #class .classT {
+        font-size: 18px;
+    }
+
+    #review .reviewCard>div {
+        height: 180px;
+        padding-right: 24px;
+    }
+
+    .reviewCard div:nth-child(4),
+    .reviewCard div:nth-child(5),
+    .reviewCard div:nth-child(6) {
+        display: none;
+    }
+
+    .campus {
+        font-size: 15px;
+    }
+
+    .classInfo {
+        letter-spacing: -0.5px;
+    }
+
+    #tap .tapConts>ul>li>.className {
+        font-size: 15px;
+        margin-right: 0;
+    }
+
+
+
+    #tap .tapConts>ul>li {
+        padding: 18px 18px;
+    }
+
+    .slide1 {
+        background: url(../img/banner01-3.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide2 {
+        background: url(../img/banner02-2.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide3 {
+        background: url(../img/banner03-2.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    /* 481~600 */
+
+    #class>div {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #class .classT {
+        font-size: 20px;
+    }
+
+    #web_Nav2 .notice span,
+    #web_Nav2 .notice a {
+        font-size: 16px;
+    }
+
+    #review .reviewCard>div {
+        height: 190px;
+        padding-right: 24px;
+    }
+
+    #tap .tapConts>ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    #tap .tapConts>ul>li {
+        margin-bottom: 28px;
+        padding: 24px 28px;
+    }
+
+    .className,
+    .campus {
+        font-size: 16px;
+    }
+
+    #tap .tapCate>ul>li {
+        font-size: 15px;
+    }
+
+    .slide1 {
+        background: url(../img/banner01-4.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide2 {
+        background: url(../img/banner02-3.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+}

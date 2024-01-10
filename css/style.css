@@ -1,0 +1,695 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+/*   font-family: Pretendard, '맑은 고딕', 돋움; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Pretendard, '맑은 고딕', 돋움;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cf {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* NAV - WEB */
+
+#wrap nav#web {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: #111;
+}
+
+nav#web #GNB {
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+nav#web #GNB>ul>li {
+    float: left;
+    margin-right: 23%;
+}
+
+nav#web #GNB>ul>li:nth-child(2) {
+    margin-top: -3px;
+}
+
+nav#web #GNB>ul>li:last-child {
+    float: right;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+nav#web #GNB>ul>li a {
+    color: white;
+}
+
+nav#web #GNB input {
+    width: 260px;
+    height: 32px;
+    border-radius: 32px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border: none;
+    background: white url(../img/search.png) no-repeat;
+    background-size: 16px;
+    background-position: 20px;
+}
+
+nav#web #LNB {
+    width: 100%;
+    height: 52px;
+    margin: 0 auto;
+    background-color: #111;
+}
+
+
+
+nav#web #LNB>ul {
+    width: 1280px;
+    margin: 0 auto;
+
+}
+
+nav#web #LNB>ul>li {
+    float: left;
+    width: 176px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+nav#web #LNB>ul>li:last-child {
+    margin-right: 0;
+}
+
+nav#web #LNB>ul>li>a {
+    display: block;
+    padding: 16px 42px;
+    width: 176px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+
+#submenu {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    height: 240px;
+    background: #111;
+    z-index: 999999;
+}
+
+#submenu>div {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#submenu .submenu>li>a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #D3D3D3;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#submenu .submenu {
+    float: left;
+    width: 176px;
+    margin-right: 6px;
+}
+
+#submenu .submenu>li>a:hover {
+    color: white;
+}
+
+
+
+
+
+/* NAV - mobile */
+
+nav#mobile {
+    position: relative;
+    display: none;
+    height: 60px !important;
+    background: #111;
+
+}
+
+nav#mobile>ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav#mobile>ul>li {
+    float: left;
+    margin-top: 14px;
+}
+
+nav#mobile>ul>li:last-child {
+    float: right;
+    margin-right: 44px;
+    margin-top: 18px;
+}
+
+
+nav#mobile i {
+    color: white;
+    font-size: 20px;
+}
+
+
+.mo_lnb {
+    clear: both;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background: #111;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.mo_lnb>li>a {
+    display: block;
+    padding: 16px 24px;
+    border-top: 1px solid #333;
+    font-weight: bold;
+}
+
+.mo_lnb>li>a>img {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.mo_lnb a {
+    color: #D3D3D3;
+}
+
+.mo_lnb .submenu {
+    display: none;
+}
+
+.mo_lnb .submenu a {
+    display: block;
+    padding: 16px 24px;
+    color: #D3D3D3;
+    font-size: 14px;
+}
+
+
+.mo_lnb a:hover {
+    color: white;
+}
+
+
+/* 스와이퍼 */
+
+
+.swiper-container {
+    width: 100%;
+    height: 440px;
+    margin: 20px 0;
+    z-index: -9999;
+}
+
+.swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    /* 내용을 중앙정렬 하기위해 flex 사용 */
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    /* 좌우 기준 중앙정렬 */
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    /* 위아래 기준 중앙정렬 */
+    align-items: center;
+}
+
+.slide1 {
+    background: url(../img/banner01.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide2 {
+    background: url(../img/banner02.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide3 {
+    background: url(../img/banner03.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* web_Nav2 */
+
+#web_Nav2 {
+    width: 100%;
+    height: 108px;
+    border-bottom: 1px solid #BCC8D7;
+}
+
+#web_Nav2>div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#web_Nav2>div>div {
+    width: 50%;
+    float: left;
+    height: 108px;
+}
+
+#web_Nav2 .notice span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0067E0;
+    margin-right: 12px;
+    line-height: 108px;
+}
+
+#web_Nav2 .notice a {
+    font-size: 18px;
+    color: #111;
+}
+
+#web_Nav2 .buttons {
+    position: relative;
+}
+
+
+#web_Nav2 .buttons ul {
+    position: absolute;
+    right: 0;
+    padding: 0;
+    margin-top: 24px;
+}
+
+#web_Nav2 .buttons ul li {
+    float: left;
+    margin-right: 16px;
+}
+
+#web_Nav2 .buttons ul li:last-child {
+    margin-right: 0;
+
+}
+
+#web_Nav2 .buttons ul li:hover a {
+    color: #4c5d74;
+}
+
+#web_Nav2 .buttons ul li:hover i {
+    color: #4c5d74;
+}
+
+#web_Nav2 .buttons ul li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #BCC8D7;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #67788f;
+}
+
+#web_Nav2 .buttons i {
+    font-size: 20px;
+    color: #67788f;
+    margin-bottom: 6px;
+}
+
+
+/* class */
+
+#class {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 124px auto 120px;
+}
+
+#class>div {
+    width: 30%;
+    margin-bottom: 60px;
+
+}
+
+#class>div>img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+#class .classT {
+    font-size: 20px;
+    padding: 0 4px;
+    margin-bottom: 20px;
+}
+
+/* #class p {
+    height: 70px;
+    margin-top: 12px;
+    padding: 0 4px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #666666;
+    word-break: keep-all;
+}
+ */
+
+
+#class .badges {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#class .badges span {
+    font-size: 14px;
+    padding: 4px 8px;
+    background-color: #E3F3FF;
+    color: #0067E0;
+    border-radius: 2px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+#class .badges span:last-child {
+    margin-right: 0;
+}
+
+#class .badges span.badges_Red {
+    background-color: #FFDBDB;
+    color: #FF4E4E;
+    font-weight: bold;
+}
+
+/* review */
+
+#review {
+    width: 100%;
+    height: auto;
+    background-color: #F8FCFF;
+    text-align: center;
+    padding: 120px 0 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#review>p {
+    color: #0067E0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    margin-bottom: 6px;
+}
+
+#review>h1 {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+    margin-bottom: 60px;
+}
+
+#review .reviewCard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#review .reviewCard>div {
+    position: relative;
+    width: 48.5%;
+    height: 180px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    padding-left: 116px;
+    padding-right: 32px;
+    padding-top: 24px;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 0px rgba(40, 107, 186, 0.05);
+    box-sizing: border-box;
+}
+
+#review .reviewCard>div>div:first-child {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-top: 3px;
+    box-sizing: border-box;
+}
+
+#review .reviewCard>div:nth-child(2n)>div {
+    padding-top: 0;
+}
+
+#review .reviewCard .reviewCardTxt {
+    width: 100%;
+    height: 80%;
+    text-align: left;
+    border-radius: 0;
+}
+
+#review .reviewCard .reviewCardTxt .name {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+
+
+
+#review .reviewCard .reviewCardTxt .name>span {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 8px;
+}
+
+
+#review .reviewCard .reviewCardTxt .name+p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0067E0;
+    margin-top: 4px;
+}
+
+#review .reviewCard .reviewCardTxt .reviewConts {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+button.moreReview,
+button.closeReview {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#review>ul {
+    display: none;
+    position: relative;
+    left: 49%;
+}
+
+#review>ul>li {
+    position: absolute;
+}
+
+
+/* Tapmenu */
+
+#tap {
+    width: 1200px;
+    padding-top: 120px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+#tap>p {
+    color: #0067E0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    margin-bottom: 6px;
+}
+
+#tap>h1 {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+    margin-bottom: 60px;
+}
+
+#tap .tapCate>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 1200px;
+    margin-bottom: 40px;
+}
+
+
+#tap .tapCate>ul>li {
+    font-size: 16px;
+    padding: 16px 18px;
+    background-color: #F7F9FA;
+    border-radius: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#tap .tapCate>ul>li:hover {
+    font-weight: bold;
+}
+
+#tap .tapConts>ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#tap .tapConts>ul>li {
+    width: 100%;
+    height: auto;
+    border: 1px solid #BCC8D7;
+    border-radius: 15px;
+    margin-bottom: 28px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px 0px rgba(40, 107, 186, 0.05);
+    padding: 24px 28px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#tap .tapConts>ul>li>p {
+    float: left;
+}
+
+#tap .tapConts>ul>li>.className {
+    margin-right: 20px;
+}
+
+#tap .tapConts>ul>li>.className:hover {
+    text-decoration: underline;
+}
+
+#tap .tapConts>ul>li>.campus {
+    color: #FF7A00;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+#tap .tapConts>ul>li>.classInfo {
+    font-size: 14px;
+    color: #666;
+}
+
+#tap .tapConts>ul>li>.period {
+    float: right;
+    font-size: 14px;
+    color: #666;
+    margin-right: 5%;
+}
+
+#tap .tapConts button {
+    float: right;
+    background: none;
+    border: none;
+    color: #0067E0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#tap .tapConts button:hover {
+    font-weight: 900;
+}
+
+/* footer */
+
+#footer {
+    width: 100%;
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #333;
+    text-align: center;
+}
+
+#footer > ul {
+    width: 1200px; /* 87% */
+    margin: 0 auto;
+}
+
+#footer > ul img {
+    width: 160px;
+    margin-bottom: 4px;
+}
+
+#footer > ul li {
+    /* float: left; */
+    color: white;
+    margin-right: 12px;
+    font-size: 12px;
+    line-height: 20px;
+}
