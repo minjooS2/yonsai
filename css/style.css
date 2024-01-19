@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: Pretendard, '맑은 고딕', 돋움;
-    overflow-x: hidden;
+ 
 }
 
 ul,
@@ -120,6 +120,7 @@ nav#web #LNB>ul>li>a {
 
 
 #submenu {
+    overflow-x: hidden;
     position: absolute;
     top: 130px;
     width: 100%;
@@ -250,6 +251,7 @@ nav#mobile i {
     text-align: center;
     font-size: 18px;
     background: #fff;
+    margin-right: 0;
 
     /* Center slide text vertically */
     display: -webkit-box;
