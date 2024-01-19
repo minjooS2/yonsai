@@ -120,7 +120,6 @@ nav#web #LNB>ul>li>a {
 
 
 #submenu {
-
     position: absolute;
     top: 130px;
     width: 100%;
@@ -474,8 +473,6 @@ nav#mobile i {
     flex-wrap: wrap;
     width: 1200px;
     margin: 0 auto;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 #review .reviewCard>div {
